@@ -17,8 +17,7 @@
   </div>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :playlist_user_id %>
+    <%= form.select :user_id, @users, id: :playlist_user_id, prompt: "Seleccione un Usuario" %>
   </div>
 
   <div class="actions">
